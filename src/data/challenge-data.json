@@ -1,0 +1,131 @@
+{
+  "challenge": {
+    "id": "diet-challenge-2026-01",
+    "title": "다이어트 챌린지",
+    "period": {
+      "startDate": "2026-02-23",
+      "endDate": "2026-03-26",
+      "timezone": "Asia/Seoul"
+    },
+    "registration": {
+      "deadlineDate": "2026-02-23",
+      "submissionMethod": "참가자는 인바디 측정 후 2월 23일까지 인포에 성함 작성 후 참가비와 함께 제출",
+      "photoRequired": false
+    },
+    "finalInbodySubmission": {
+      "startDate": "2026-03-26",
+      "endDate": "2026-03-27",
+      "method": "인포에 직접 제출"
+    },
+    "entryFee": {
+      "amountKRW": 10000,
+      "cashOnly": true,
+      "usage": "참가비는 상금으로 사용"
+    },
+    "awards": {
+      "male": [
+        { "rank": 1, "amountKRW": 100000 },
+        { "rank": 2, "amountKRW": 50000 },
+        { "rank": 3, "amountKRW": 30000 }
+      ],
+      "female": [
+        { "rank": 1, "amountKRW": 100000 },
+        { "rank": 2, "amountKRW": 50000 },
+        { "rank": 3, "amountKRW": 30000 }
+      ],
+      "diet": [
+        { "rank": 1, "amountKRW": 50000 },
+        { "rank": 2, "amountKRW": 30000 },
+        { "rank": 3, "amountKRW": 20000 }
+      ],
+      "note": "참여 인원에 따라 상금은 변동될 수 있음"
+    },
+    "scoringRules": [
+      {
+        "id": "body-fat-percent",
+        "description": "체지방률 -0.1% 당 +1점",
+        "metric": "bodyFatPercent",
+        "unitChange": -0.1,
+        "scorePerUnit": 1
+      },
+      {
+        "id": "skeletal-muscle-kg",
+        "description": "골격근량 +0.1kg 당 +2점",
+        "metric": "skeletalMuscleKg",
+        "unitChange": 0.1,
+        "scorePerUnit": 2
+      },
+      {
+        "id": "weekly-mission",
+        "description": "주간 운동 미션 완료 1회당 +1점",
+        "metric": "weeklyMissionCompleted",
+        "unitChange": 1,
+        "scorePerUnit": 1
+      }
+    ]
+  },
+  "missions": [
+    {
+      "id": "w1-2026-02-23",
+      "date": "2026-02-23",
+      "weekday": "MON",
+      "weekIndex": 1,
+      "title": "Plank Twists",
+      "type": "REPS",
+      "targetValue": 200,
+      "targetUnit": "reps",
+      "youtubeUrl": "https://youtu.be/fR0tb6agqqA?si=l7RvR7YILRsa-c6O"
+    },
+    {
+      "id": "w1-2026-02-24",
+      "date": "2026-02-24",
+      "weekday": "TUE",
+      "weekIndex": 1,
+      "title": "Push Up",
+      "type": "REPS",
+      "targetByGender": {
+        "MALE": 120,
+        "FEMALE": 100
+      },
+      "targetUnit": "reps"
+    },
+    {
+      "id": "w1-2026-02-25",
+      "date": "2026-02-25",
+      "weekday": "WED",
+      "weekIndex": 1,
+      "title": "Air Squat",
+      "type": "REPS",
+      "targetValue": 150,
+      "targetUnit": "reps"
+    },
+    {
+      "id": "w1-2026-02-26",
+      "date": "2026-02-26",
+      "weekday": "THU",
+      "weekIndex": 1,
+      "title": "Bike",
+      "type": "DISTANCE",
+      "targetValue": 7,
+      "targetUnit": "km"
+    },
+    {
+      "id": "w1-2026-02-27",
+      "date": "2026-02-27",
+      "weekday": "FRI",
+      "weekIndex": 1,
+      "title": "V Up",
+      "type": "REPS",
+      "targetValue": 120,
+      "targetUnit": "reps",
+      "youtubeUrl": "https://youtu.be/7UVgs18Y1P4?si=EEX2Zhn1K4K-12C2"
+    }
+  ],
+  "notices": [
+    {
+      "id": "week2-pending",
+      "type": "INFO",
+      "message": "둘째주 미션은 추후 공지 예정"
+    }
+  ]
+}
