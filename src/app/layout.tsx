@@ -17,6 +17,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Assemble Diet Challenge",
   description: "날짜별 운동 정보를 확인하는 다이어트 챌린지 앱",
+  themeColor: "#f9fcff",
 };
 
 export default function RootLayout({
