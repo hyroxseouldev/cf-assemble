@@ -29,6 +29,12 @@ export default function RootLayout({
       <body
         className={`${notoSansKR.variable} ${spaceGrotesk.variable} antialiased`}
       >
+        <a
+          href="#main-content"
+          className="sr-only focus-visible:not-sr-only focus-visible:fixed focus-visible:left-4 focus-visible:top-4 focus-visible:z-50 focus-visible:rounded-md focus-visible:bg-background focus-visible:px-4 focus-visible:py-2 focus-visible:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
+        >
+          본문으로 건너뛰기
+        </a>
         {children}
       </body>
     </html>
